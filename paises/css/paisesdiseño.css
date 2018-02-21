@@ -32,8 +32,23 @@ article{
   border-left: 1px solid gray;
   padding: 1em;
   overflow: hidden;
+  background-color: #cccccc;
+  background-repeat: repeat-y;
 }
-#pais{
+
+span#hmexico {
   color: rgb(53, 203, 34);
+  text-align:center;
+}
+span#hparis {
+  color: rgb(28, 138, 240);
+  text-align:center;
+}
+span#htokyo {
+  color: rgb(194, 68, 46);
+  text-align:center;
+}
+span#hlondres {
+  color: rgb(233, 69, 36);
   text-align:center;
 }

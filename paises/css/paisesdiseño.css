@@ -52,3 +52,23 @@ span#hlondres {
   color: rgb(233, 69, 36);
   text-align:center;
 }
+p{
+  margin-left:300px;
+}
+h1{
+
+
+  text-align: center;
+}
+.banderamx{
+      background-image: url(../img/b01.svg);
+}
+.banderaldn{
+      background-image: url(../img/b03.svg);
+}
+.banderatko{
+      background-image: url(../img/b04.svg);
+}
+.banderaprs{
+      background-image: url(../img/b02.svg);
+}

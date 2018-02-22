@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>DivsSemanticasConEstilo</title>
+  </head>
+  <body>
+    <div id="agrupar">
+      <header id="cabecera">
+        <h1>Este es el titulo principal del articulo.</h1>
+      </header>
+
+      <nav id="menu">
+        <ul>
+          <li><a href="#">Principal</a></li>
+          <li><a href="#">Fotos</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <section id="seccion">
+        <!-- Inicio del primer articulo -->
+        <article>
+          <header>
+            <hgroup>
+              <h1>T&iacute;tulo del mensaje uno</h1>
+              <h4>T&iacute;tulo del mensaje dos</h4>
+            </hgroup>
+            <time datatime="2011-12-10" pubdate="">publicado 10-12-2011</time>
+          </header>
+          Este es el texto de mi primer mensaje.
+          <figure>
+            <img src="img/me.jpeg" alt="" width="200">
+            <figcaption>
+              Esta es la imagen del primer mensaje.
+            </figcaption>
+          </figure>
+          <footer>
+            <p>comentario (0)</p>
+          </footer>
+        </article> <!-- Fin del primer articulo -->
+
+        <!-- Inicio del segundo articulo -->
+        <article>
+          <header>
+            <hgroup>
+              <h1>T&iacute;tulo del mensaje dos</h1>
+              <h4>T&iacute;tulo del mensaje dos</h4>
+            </hgroup>
+            <time datatime="2011-12-15" pubdate="">publicado 15-12-2011</time>
+          </header>
+          Este es el texto de mi segundo mensaje.
+          <figure>
+            <img src="img/me.jpeg" alt="" width="200">
+            <figcaption>
+              Esta es la imagen del segundo mensaje.
+            </figcaption>
+          </figure>
+          <footer>
+            <p>comentario (0)</p>
+          </footer>
+        </article> <!-- Fin del segundo articulo -->
+
+      </section>
+
+      <aside id="columna">
+        <blockquote>Mensaje número uno</blockquote>
+        <blockquote>Mensaje número dos</blockquote>
+        <a href="https://www.facebook.com/">
+          <figure>
+            <img src="img/fb.svg" alt="facebook" width="200">
+          </figure>
+        </a>
+        <a href="https://www.instagram.com/">
+          <figure>
+            <img src="img/instagram.svg" alt="instagram" width="200">
+          </figure>
+        </a>
+      </aside>
+
+      <footer id="pie">
+        Derechos Reservados &copy; 2010-2011
+        <address>
+          <a href="http://www.itorizaba.edu.mx"></a>
+        </address>
+      </footer>
+    </div>
+
+  </body>
+</html>

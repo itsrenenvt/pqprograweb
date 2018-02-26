@@ -17,20 +17,16 @@ body{
   font: bold 14px Montserrat, sans-serif;
   text-align: center;
   background-size: 50px;
+  background-image: url(../img/instagram.svg);
+  background-repeat: no-repeat;
 }
 
 #caja1{
-  background-image: url(../img/instagram.svg);
-  background-repeat: no-repeat;
   background-position: 1px bottom;
 }
 #caja2{
-  background-image: url(../img/instagram.svg);
-  background-repeat: no-repeat;
   background-position: 150px top;
 }
 #caja3{
-  background-image: url(../img/instagram.svg);
-  background-repeat: no-repeat;
   background-position:center;
 }

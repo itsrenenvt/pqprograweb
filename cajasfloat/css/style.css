@@ -1,6 +1,7 @@
 body{
   text-align: center;
 }
+/* rojo */
 #cajamain{
   border: 3px solid rgb(235, 40, 40);
   width: 1000px;
@@ -8,6 +9,7 @@ body{
   margin: 15px auto;
 }
 
+/* cajas azules */
 .cajabase{
   border: 3px solid rgb(11, 137, 191);
   width: 200px;
@@ -15,7 +17,6 @@ body{
   margin: 50px;
   display: inline-block;
   font: bold 14px Montserrat, sans-serif;
-  text-align: center;
   background-size: 50px;
   background-image: url(../img/instagram.svg);
   background-repeat: no-repeat;

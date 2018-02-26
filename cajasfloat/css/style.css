@@ -1,0 +1,36 @@
+body{
+  text-align: center;
+}
+#cajamain{
+  border: 3px solid rgb(235, 40, 40);
+  width: 1000px;
+  height: 500px;
+  margin: 15px auto;
+}
+
+.cajabase{
+  border: 3px solid rgb(11, 137, 191);
+  width: 200px;
+  height: 280px;
+  margin: 50px;
+  display: inline-block;
+  font: bold 14px Montserrat, sans-serif;
+  text-align: center;
+  background-size: 50px;
+}
+
+#caja1{
+  background-image: url(../img/instagram.svg);
+  background-repeat: no-repeat;
+  background-position: 1px bottom;
+}
+#caja2{
+  background-image: url(../img/instagram.svg);
+  background-repeat: no-repeat;
+  background-position: 150px top;
+}
+#caja3{
+  background-image: url(../img/instagram.svg);
+  background-repeat: no-repeat;
+  background-position:center;
+}

@@ -23,10 +23,10 @@ body{
 }
 
 #caja1{
-  background-position: 1px bottom;
+  background-position: bottom left;
 }
 #caja2{
-  background-position: 150px top;
+  background-position: top right;
 }
 #caja3{
   background-position:center;

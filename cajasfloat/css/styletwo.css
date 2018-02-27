@@ -16,7 +16,7 @@ body{
 
 /* cajas azules */
 .cajabase{
-  border: 3px solid rgb(11, 137, 191);
+  border: 3px solid rgb(27, 23, 47);
   width: 200px;
   height: 280px;
   margin: 50px;
@@ -28,9 +28,9 @@ body{
   border-radius: 30px;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
-  box-shadow: 10px 10px  rgba(0, 163, 255, 0.5);
-  -moz-box-shadow: 10px 10px  rgba(0, 163, 255, 0.5);
-  -webkit-box-shadow: 10px 10px  rgba(0, 163, 255, 0.5);
+  box-shadow: 10px 10px  rgba(92, 105, 112, 0.5);
+  -moz-box-shadow: 10px 10px  rgba(92, 105, 112, 0.5);
+  -webkit-box-shadow: 10px 10px  rgba(92, 105, 112, 0.5);
 }
 
 #caja1{

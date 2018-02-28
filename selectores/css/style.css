@@ -1,0 +1,23 @@
+p:nth-child(odd){
+  background: red;
+}
+
+p:nth-child(even){
+  background: blue;
+}
+
+p:nth-child(2){
+  background: #999999;
+}
+
+p:last-child{
+  background: yellow;
+}
+
+.miclase>p{
+  background: white;
+}
+
+.miclase>p:nth-child(3n+0){
+  background: pink;
+}

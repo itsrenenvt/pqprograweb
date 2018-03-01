@@ -2,7 +2,8 @@ ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden; /*Especifica qque sucede si el contenido de cuadro de un elemento de desborda*/
+  overflow: hidden; /*Especifica qque sucede si el contenido de cuadro de un
+  elemento de desborda*/
   background-color: #333;
 }
 
@@ -35,7 +36,7 @@ li a:active{ /*Cuando da clic en el mause*/
 li:last-child{
   float: left;
   background-color: rgba(106, 116, 116, 0.69);
-  color: white;
+  margin: .5px;
 }
 
 #me{

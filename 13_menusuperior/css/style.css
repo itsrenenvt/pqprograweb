@@ -29,7 +29,7 @@ li a:active{ /*Cuando da clic en el mause*/
 }
 
 li:last-child{
-  float: right;
+  float: left;
   background-color: rgba(106, 116, 116, 0.69);
   color: white;
 }

@@ -23,6 +23,7 @@ li a{
 li a:hover{
   background-color: #f1d517;
   color: #333;
+  border-radius: 7px;
 }
 
 li a:active{ /*Cuando da clic en el mause*/

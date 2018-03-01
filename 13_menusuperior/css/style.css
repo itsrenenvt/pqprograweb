@@ -16,6 +16,8 @@ li a{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: Montserrat;
+  margin: 4px;
 }
 
 li a:hover{
@@ -25,11 +27,24 @@ li a:hover{
 
 li a:active{ /*Cuando da clic en el mause*/
   background-color: #609acf;
-  font-size: 120%
+  font-size: 110%;
+  font-style: italic;
 }
 
 li:last-child{
   float: left;
   background-color: rgba(106, 116, 116, 0.69);
   color: white;
+}
+
+#me{
+  margin: 3px;
+  padding: 0px;
+  width: 50px;
+  float: right;
+}
+
+#me:active{
+  margin: 0px;
+  width: 55px;
 }

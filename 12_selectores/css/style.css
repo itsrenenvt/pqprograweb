@@ -21,3 +21,7 @@ p:last-child{
 .miclase>p:nth-child(3n+0){
   background: pink;
 }
+
+/* ^ al principio
+   $ terminación
+   * en cualquier lugar */

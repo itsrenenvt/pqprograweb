@@ -29,12 +29,14 @@ li a:hover{
   background-color: #f1d517;
   color: #333;
   border-radius: 7px;
+	transform: scaleX(1.1);
 }
 
 li a:active{ /*Cuando da clic en el mause*/
   background-color: #609acf;
-  font-size: 110%;
+  /* font-size: 110%; */
   font-style: italic;
+	transform: scaleX(1.1);
 }
 
 li:last-child{

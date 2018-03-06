@@ -5,6 +5,11 @@
 h1{
   font: bold 20px Montserrat, sans-serif;
 }
+
+.titulo{
+  margin: 20px;
+}
+
 h2{
   font: bold 14px Montserrat, sans-serif;
 }
@@ -27,25 +32,15 @@ body{
   margin: 15px auto;
   text-align: left;
 }
+
 /*Agregando estilos para <header>.*/
 #cabecera{
   background: #FFFBB9;
   border: 1px solid #999999;
-  padding: 20px;
+  padding: 0px;
 }
+
 /*Agregando estilos para <nav>*/
-#menu{
-  background: #CCCCCC;
-  padding: 5px 15px;
-}
-
-#menu li{
-  display: inline-block;
-  list-style: none;
-  padding: 5px;
-  font: bold 14px Montserrat, sans-serif;
-}
-
 #seccion{
   float: left;
   width: 660px;
@@ -107,13 +102,16 @@ figcaption{
 	margin: 0px;
 	padding: 0px;
 }
+
 ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   overflow: hidden; /*Especifica qque sucede si el contenido de cuadro de un
   elemento de desborda*/
   background-color: #333;
+  /*modifica tamaño del header negro*/
+  height: 38px;
 }
 
 li{
@@ -124,9 +122,9 @@ li a{
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 6px 16px;
   text-decoration: none;
-  font-family: Montserrat;
+  font: bold 14px Montserrat, sans-serif;
   margin: 4px;
 }
 
@@ -138,24 +136,27 @@ li a:hover{
 
 li a:active{ /*Cuando da clic en el mause*/
   background-color: #609acf;
-  font-size: 110%;
+  /* font-size: 110%; */
+  transform: scaleX(1.0);
   font-style: italic;
 }
 
 li:last-child{
   float: left;
   background-color: rgba(106, 116, 116, 0.69);
-  margin: .5px;
+  margin: 0px;
 }
 
 #me{
-  margin: 3px;
+  margin: 6px;
   padding: 0px;
-  width: 50px;
+  width: 30px;
+  height: 25px;
   float: right;
 }
 
 #me:active{
-  margin: 0px;
-  width: 55px;
+  transform: scale(1.1);
+  /* margin: 0px;
+  width: 55px; */
 }

@@ -38,16 +38,37 @@ ul.topnav li a.active{
 ul.topnav li.right{
 	float:right;
 }
+.imgme{
+	width: 100%;
+	max-width: 46px;
+	/* margin-top: 3px; */
+}
+
+/* .imgme:hover{
+	transform: scale(1.2);
+} */
+ul.topnav img{
+	float: right;
+}
+.backimg:hover{
+	background-color: #111;
+}
 
 @media screen and (max-width: 600px) {
-	ul.top li.right,
-	ul.topnav li{float: none;}
-}
-/* li a.active{
-	background-color: #4CAF50;
-	color: white;
+	ul.topnav li.right,	ul.topnav li{float: none;}
+	.imgme{
+	max-width: 65px;
+  position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;}
+	.backimg{
+		padding-bottom: 65px;
+		background-color: #333;
+	}
 }
 
+/*
 li a:hover:not(.active){
 	background-color: #555;
 	color: white;

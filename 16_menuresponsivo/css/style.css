@@ -41,15 +41,12 @@ ul.topnav li.right{
 .imgme{
 	width: 100%;
 	max-width: 46px;
-	/* margin-top: 3px; */
 }
 
-/* .imgme:hover{
-	transform: scale(1.2);
-} */
 ul.topnav img{
 	float: right;
 }
+
 .backimg:hover{
 	background-color: #111;
 }

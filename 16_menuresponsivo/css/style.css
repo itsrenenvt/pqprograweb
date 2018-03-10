@@ -46,6 +46,10 @@ ul.topnav img{
 	background-color: #111;
 }
 
+.imgbottom{
+	background-image: url(img/gitoctocat.svg);
+}
+
 @media screen and (max-width: 600px) {
 	ul.topnav li.right,	ul.topnav li{float: none;}
 

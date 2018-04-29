@@ -24,7 +24,7 @@ body{
 
 .input:focus{
   border-style: solid;
-  border-color: rgb(9, 162, 79);
+  border-color: rgb(51, 254, 0);
   border-top: none;
   border-left: none;
   border-right: none;
@@ -36,8 +36,8 @@ body{
   border-color: rgb(9, 102, 162);
   /* margin-left: 25em;
   margin-right: 25em; */
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
   padding: 100px;
   border-radius: 1em;
 }

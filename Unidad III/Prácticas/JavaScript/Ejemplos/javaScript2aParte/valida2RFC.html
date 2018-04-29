@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="PQG">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Control submit por evento formulario</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function valida(campo){
+			var bRet = false;
+			if (campo.value == "")
+				alert("Faltan datos");
+			else
+				if (!campo.value.match(/^[A-Z]{3,4}\d{6}[A-Z0-9]{3}$/))
+					alert("No tiene formato de RFC");
+				else
+					bRet = true;
+			return bRet;
+		}
+	</script>
+	<form>
+		RFC <input type="text" name="txtRFC" maxlength="13" size="15"/>
+		<br/>
+		<input type="submit" onClick="return valida(txtRFC);" value="Ok"/>
+	</form>
+</body>
+</html>

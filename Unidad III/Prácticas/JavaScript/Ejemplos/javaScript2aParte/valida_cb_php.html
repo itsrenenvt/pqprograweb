@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Validar al menos un checkbox marcado para PHP</title>
+</head>
+<body>
+	<!-- El Script debe estar en el encabezado dl body-->
+	<script type="text/javascript">
+		function valida(){
+			var bRet = false;
+			var i=0;
+			var arrCb = document.getElementsByTagName("input");
+
+			if (arrCb!=null){
+				for (i=0;i<arrCb.length;i++){
+					if (arrCb[i].type=="checkbox" && arrCb[i].checked){
+						bRet = true;
+						break;
+					}
+				}
+			}
+			if (!bRet)
+				alert("No hay nada seleccionado");
+			return bRet;
+		}
+	</script>
+	<form action="/page_action.php">
+		Opciones<br/>
+		<input type="checkbox" name="cbUno[]" value="1"/>Uno<br/>
+		<input type="checkbox" name="cbUno[]" value="2"/>Dos<br/>
+		<input type="checkbox" name="cbUno[]" value="3"/>Tres<br/>
+		<br/>
+		<input type="submit" onClick="return valida();" value="Ok"/>
+	</form>
+</body>
+</html>

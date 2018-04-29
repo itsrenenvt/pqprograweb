@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Control submit por evento formulario</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function controlaEnvio(){
+			return confirm("¿Quieres cambiar de página?");
+		}
+	</script>
+	<form method="get" action="cierraporboton.html" onSubmit="return controlaEnvio();">
+		<input type="button" onClick="submit();" value="Tipo button"/>
+		<input type="submit" value="Tipo submit"/>
+	</form>
+</body>
+</html>

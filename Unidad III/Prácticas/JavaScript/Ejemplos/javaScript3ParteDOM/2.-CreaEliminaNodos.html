@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Crea parrafos con DOM</title>
+
+    <script type="text/javascript">
+
+    window.onload = function() {
+
+          // Crear nodo de tipo Element
+        var parrafo = document.createElement("p");
+
+
+        // Crear nodo de tipo Text
+        var contenido = document.createTextNode("Hola Mundo!");
+
+        // Añadir el nodo Text como hijo del nodo Element
+        parrafo.appendChild(contenido);
+
+        // Añadir el nodo Element como hijo de la pagina
+        document.body.appendChild(parrafo);
+
+
+        parrafo = document.createElement("p");
+
+
+        // Crear nodo de tipo Text
+        contenido = document.createTextNode("Hola Mundo 2!");
+
+        // Añadir el nodo Text como hijo del nodo Element
+        parrafo.appendChild(contenido);
+
+        // Añadir el nodo Element como hijo de la pagina
+        document.body.appendChild(parrafo);
+
+      }
+
+      function eliminar() {
+        var parrafo=document.getElementById("temp");
+        var res = prompt("Desea elminar el primer mensaje??", "Si");
+        if (res != null)
+            parrafo.parentNode.removeChild(parrafo);
+
+      }
+
+    </script>
+  </head>
+  <body>
+      <p id="temp"> parrafo temporal</p>
+     <button type="button" onclick="eliminar()">Presionar</button>
+
+  </body>
+</html>

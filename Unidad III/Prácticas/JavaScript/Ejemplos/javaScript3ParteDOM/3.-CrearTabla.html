@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Control submit por evento formulario</title>
+</head>
+<body>
+		<form>
+		<table id="tblUno">
+			<tr>
+				<th>Columna 1</th>
+				<th>Columna 2</th>
+			</tr>
+		</table>
+		<input type="button" value="Agregar" onclick = "agregaLinea();"/>
+		<br/>
+		<input type="button" value="Eliminar" onclick = "eliminaLinea();"/>
+	</form>
+
+
+	<script type="text/javascript">
+		function agregaLinea(){
+			var oTbl = document.getElementById("tblUno");
+			var oLin = oTbl.insertRow(-1);
+			var oCelda1 = oLin.insertCell(0);
+			var oCelda2 = oLin.insertCell(1);
+
+			oCelda1.innerHTML = "Celda";
+			oCelda2.innerHTML = 'Texto y campo ' +
+			'<input type="text" name="campo"/>';
+		}
+
+		function eliminaLinea(){
+			var oTbl = document.getElementById("tblUno");
+			oTbl.deleteRow(-1);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Ejemplo JS embebido, saluda al entrar</title>
+</head>
+<body onLoad="saluda('mundo...');">
+	<script type="text/javascript">
+
+		function saluda(x){
+			//alert("hola..." + x);
+			document.getElementById('txt').innerHTML ="hola... " + x
+		}
+	</script>
+
+	Ya nos salud&oacute; JS embebido
+
+	<p id="txt"></p>
+</body>
+</html>

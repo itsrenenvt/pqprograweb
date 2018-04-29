@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="PQG">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valida mediante Form</title>
+<head>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["nombre"].value;
+    if (x == "") {
+        alert("Debe de introducir el nombre");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="get">
+<label for="nomre">Name:
+    <input type="text" name="nombre">
+</label>
+<input type="submit" value="Validar">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE
+<html>
+<head>
+<title>Ejemplo Control de Submit</title>
+
+</head>
+<body onLoad="alert('Hola');">
+
+
+
+	<form action="cierraporboton.html" method="get" >
+		<input type="button" name="boton" onClick="controlaEnvio()== true ? submit() : alert();" value="TipoBoton"/>
+		<input type="submit" name="validar" onClick="return controlaEnvio();" value="TipoSubmit"/>
+	</form>
+
+	<script type="text/javascript">
+		function controlaEnvio(){
+			return confirm("¿Quieres cambiar de página?");
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="PQG">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Control submit por evento formulario</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function valida(campo){
+			var bRet = false;
+			if (campo.value == "")
+				alert("Falta información");
+			else  if(campo.value.length<10)
+              alert("Faltan caracteres");
+            else
+             bRet = true;
+    	return bRet;
+		}
+	</script>
+	<form>
+		Nombre <input type="text" name="txtNom" value="" maxlength="10" size="12"/>
+		<br/>
+		<input type="submit" onClick="return valida(txtNom);" value="Ok"/>
+	</form>
+</body>
+</html>

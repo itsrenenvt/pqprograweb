@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Validar al menos un checkbox marcado</title>
+</head>
+<body>
+
+	<form action="/page_action.php" >
+		Opciones<br/>
+		<input type="checkbox" name="cbUno" value="1"/>Uno<br/>
+		<input type="checkbox" name="cbUno" value="2"/>Dos<br/>
+		<input type="checkbox" name="cbUno" value="3"/>Tres<br/>
+		<br/>
+		<input type="submit" onClick="return valida(cbUno);" value="Ok"/>
+	</form>
+
+	<script type="text/javascript">
+		function valida(campo){
+			var bRet = false;
+			var i=0;
+
+			for (i=0;i<campo.length;i++){
+				if (campo[i].checked){
+					bRet = true;
+					break;
+				}
+			}
+			if (!bRet)
+				alert("No hay nada seleccionado");
+			return bRet;
+		}
+	</script>
+</body>
+</html>

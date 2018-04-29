@@ -49,8 +49,8 @@ $oPersHosp = new PacientesHospital();
 					<tr>
 						<td>Clave</td>
 						<td>Nombre</td>
-						<td>Apellido Paterno</td>
-						<td>Apellido Materno</td>
+						<!-- <td>Apellido Paterno</td>
+						<td>Apellido Materno</td> -->
 						<td>Fecha de nacimiento</td>
 						<td>Sexo</td>
 						<td>Alergias</td>
@@ -62,9 +62,9 @@ $oPersHosp = new PacientesHospital();
 					 ?>
 					 <tr>
  						<td class="llave"><?php echo $oPersHosp->getIdPersonal(); ?></td>
- 						<td><?php echo $oPersHosp->getNombre(); ?></td>
-						<td><?php echo $oPersHosp->getApePat(); ?></td>
-						<td><?php echo $oPersHosp->getApeMat(); ?></td>
+ 						<td><?php echo $oPersHosp->getNombreCompleto(); ?></td>
+						<!-- <td><?php //echo $oPersHosp->getApePat(); ?></td>
+						<td><?php //echo $oPersHosp->getApeMat(); ?></td> -->
 						<td><?php echo $oPersHosp->getFechaNacim(); ?></td>
 						<td><?php echo $oPersHosp->getSexo(); ?></td>
 						<td><?php echo $oPersHosp->getTipo(); ?></td>

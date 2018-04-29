@@ -72,51 +72,51 @@
 
      if((nDia>=21&& nMes==3) || (nDia>=1 && nDia<=19 && nMes==4))
 		 //document.getElementsByTagName('label')[0].innerHTML ="Aries";
-		 document.getElementsByTagName('img')[0].src ="img/aries.png";
+		 document.getElementsByTagName('img')[0].src ="img/aries.svg";
 
 		if((nDia>=20&& nMes==4) || (nDia>=1 && nDia<=20 && nMes==5))
     //document.getElementsByTagName('label')[0].innerHTML ="Tauro";
-		document.getElementsByTagName('img')[0].src ="img/tauro.png";
+		document.getElementsByTagName('img')[0].src ="img/tauro.svg";
 
 			 if((nDia>=21&& nMes==5) || (nDia>=1 && nDia<=20 && nMes==6))
 			// document.getElementsByTagName('label')[0].innerHTML ="Geminis";
-			document.getElementsByTagName('img')[0].src ="img/geminis.png";
+			document.getElementsByTagName('img')[0].src ="img/geminis.svg";
 
 				if((nDia>=21 && nMes==6) || (nDia>=1 && nDia<=22 && nMes==7))
 				//document.getElementsByTagName('label')[0].innerHTML ="Cancer";
-				document.getElementsByTagName('img')[0].src ="img/cancer.png";
+				document.getElementsByTagName('img')[0].src ="img/cancer.svg";
 
 				 if((nDia>=23 && nMes==7) || (nDia>=1 && nDia<=23 && nMes==8))
 				 //document.getElementsByTagName('label')[0].innerHTML ="Leo";
-				 document.getElementsByTagName('img')[0].src ="img/leo.png";
+				 document.getElementsByTagName('img')[0].src ="img/leo.svg";
 
 				 if((nDia>=24 && nMes==8) || (nDia>=1 && nDia<=22 && nMes==9))
 				 //document.getElementsByTagName('label')[0].innerHTML ="Virgo";
-				 document.getElementsByTagName('img')[0].src ="img/virgo.png";
+				 document.getElementsByTagName('img')[0].src ="img/virgo.svg";
 
 				 if((nDia>=23 && nMes==9) || (nDia>=1 && nDia<=22 && nMes==10))
 				 //document.getElementsByTagName('label')[0].innerHTML ="Libra";
-				 document.getElementsByTagName('img')[0].src ="img/libra.png";
+				 document.getElementsByTagName('img')[0].src ="img/libra.svg";
 
 				 if((nDia>=23 && nMes==10) || (nDia>=1 && nDia<=21 && nMes==11))
 				 //document.getElementsByTagName('label')[0].innerHTML ="Escorpio";
-				 document.getElementsByTagName('img')[0].src ="img/escorpio.png";
+				 document.getElementsByTagName('img')[0].src ="img/escorpio.svg";
 
 				 if((nDia>=22 && nMes==11) || (nDia>=1 && nDia<=21 && nMes==12))
 				 //document.getElementsByTagName('label')[0].innerHTML ="Sagitario";
-				 document.getElementsByTagName('img')[0].src ="img/sagitario.png";
+				 document.getElementsByTagName('img')[0].src ="img/sagitario.svg";
 
 				 if((nDia>=22 && nMes==12) || (nDia>=1 && nDia<=19 && nMes==1))
 				 //document.getElementsByTagName('label')[0].innerHTML ="Capricornio";
-				 document.getElementsByTagName('img')[0].src ="img/capricornio.png";
+				 document.getElementsByTagName('img')[0].src ="img/capricornio.svg";
 
 				 if((nDia>=20 && nMes==1) || (nDia>=1 && nDia<=19 && nMes==2))
 				 //document.getElementsByTagName('label')[0].innerHTML ="Acuario";
-				 document.getElementsByTagName('img')[0].src ="img/acuario.png";
+				 document.getElementsByTagName('img')[0].src ="img/acuario.svg";
 
 				 if((nDia>=20 && nMes==2) || (nDia>=1 && nDia<=20 && nMes==3))
 				 //document.getElementsByTagName('label')[0].innerHTML ="Piscis";
-				 document.getElementsByTagName('img')[0].src ="img/piscis.png";
+				 document.getElementsByTagName('img')[0].src ="img/piscis.svg";
 
 		}
 	}

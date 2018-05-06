@@ -95,7 +95,7 @@ class PacientesHospital extends Persona{
 		    $this->sNombre == "" OR
 			  $this->sApePat == "" OR
 		    $this->sSexo == "" OR
-				// $this->nTipo == 0 OR 
+				// $this->nTipo == 0 OR
 				$this->dFechaNacim==null)
 			throw new Exception("PacientesHospital->modificar(): faltan datos");
 		else{
@@ -141,7 +141,7 @@ class PacientesHospital extends Persona{
 	$arrRS=null;
 	$aLinea=null;
 	$j=0;
-	$oPersHosp=null;
+	$oPacHosp=null;
 	$arrResultado=false;
 		if ($oAccesoDatos->conectar()){
 		 	$sQuery = "SELECT nidpac, snombre, sapepat, sapemat,
@@ -152,16 +152,16 @@ class PacientesHospital extends Persona{
 			$oAccesoDatos->desconectar();
 			if ($arrRS){
 				foreach($arrRS as $aLinea){
-					$oPersHosp = new PacientesHospital();
-					$oPersHosp->setIdPersonal($aLinea[0]);
-					$oPersHosp->setNombre($aLinea[1]);
-					$oPersHosp->setApePat($aLinea[2]);
-					$oPersHosp->setApeMat($aLinea[3]);
-					$oPersHosp->setFechaNacim($aLinea[4]);
-					// $oPersHosp->setFechaNacim(DateTime::createFromFormat('Y-m-d',$aLinea[4]));
-					$oPersHosp->setSexo($aLinea[5]);
-					$oPersHosp->setTipo($aLinea[6]);
-            		$arrResultado[$j] = $oPersHosp;
+					$oPacHosp = new PacientesHospital();
+					$oPacHosp->setIdPersonal($aLinea[0]);
+					$oPacHosp->setNombre($aLinea[1]);
+					$oPacHosp->setApePat($aLinea[2]);
+					$oPacHosp->setApeMat($aLinea[3]);
+					$oPacHosp->setFechaNacim($aLinea[4]);
+					// $oPacHosp->setFechaNacim(DateTime::createFromFormat('Y-m-d',$aLinea[4]));
+					$oPacHosp->setSexo($aLinea[5]);
+					$oPacHosp->setTipo($aLinea[6]);
+            		$arrResultado[$j] = $oPacHosp;
 					$j=$j+1;
                 }
 			}

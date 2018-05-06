@@ -8,10 +8,10 @@ include_once("modelo\PacientesHospital.php");
 session_start();
 
 $sErr=""; $sOpe = ""; $sCve = ""; $sNomBoton ="Borrar";
-$oPersHosp=new PacientesHospital();
+$oPacHosp=new PacientesHospital();
 $bCampoEditable = false; $bLlaveEditable=false;
 
-$oPersHosp = new PacientesHospital();
+$oPacHosp = new PacientesHospital();
 	/*Verificar que haya sesión*/
 	if (isset($_SESSION["usu"]) && !empty($_SESSION["usu"])){
 		/*Verificar datos de captura*/
@@ -20,9 +20,9 @@ $oPersHosp = new PacientesHospital();
 			$sOpe = $_POST["txtOpe"];
 			$sCve = $_POST["txtClave"];
 			if ($sOpe != 'a'){
-				$oPersHosp->setIdPersonal($sCve);
+				$oPacHosp->setIdPersonal($sCve);
 				try{
-					if (!$oPersHosp->buscar()){
+					if (!$oPacHosp->buscar()){
 						$sError = "Paciente no existe";
 					}
 				}catch(Exception $e){
@@ -65,35 +65,35 @@ $oPersHosp = new PacientesHospital();
 				Nombre
 				<input type="text" name="txtNombre"
 					<?php echo ($bCampoEditable==true?'':' disabled ');?>
-					value="<?php echo $oPersHosp->getNombre();?>"/>
+					value="<?php echo $oPacHosp->getNombre();?>"/>
 				<br/>
 				Apellido Paterno
 				<input type="text" name="txtApePat"
 					<?php echo ($bCampoEditable==true?'':' disabled ');?>
-					value="<?php echo $oPersHosp->getApePat();?>"/>
+					value="<?php echo $oPacHosp->getApePat();?>"/>
 				<br/>
 				Apellido Materno
 				<input type="text" name="txtApeMat"
 					<?php echo ($bCampoEditable==true?'':' disabled ');?>
-					value="<?php echo $oPersHosp->getApeMat();?>"/>
+					value="<?php echo $oPacHosp->getApeMat();?>"/>
 				<br/>
 				Fecha de Nacimiento (aaaa-mm-dd)
 				<input type="date" name="txtFecNacim"
 					<?php echo ($bCampoEditable==true?'':' disabled ');?>
-					value="<?php echo $sOpe == 'a'?'':$oPersHosp->getFechaNacim()->format('Y-m-d');?>"/>
+					value="<?php echo $sOpe == 'a'?'':$oPacHosp->getFechaNacim()->format('Y-m-d');?>"/>
 				<br/>
 				Sexo
 				<input type="radio" name="rbSexo" value="F"
 					<?php echo ($bCampoEditable==true?'':' disabled ');?>
-					<?php echo ($oPersHosp->getSexo()=='F'?'checked="true"':'');?>/>Femenino
+					<?php echo ($oPacHosp->getSexo()=='F'?'checked="true"':'');?>/>Femenino
 				<input type="radio" name="rbSexo" value="M"
 					<?php echo ($bCampoEditable==true?'':' disabled ');?>
-					<?php echo ($oPersHosp->getSexo()=='M'?'checked="true"':'');?>/>Masculino
+					<?php echo ($oPacHosp->getSexo()=='M'?'checked="true"':'');?>/>Masculino
 				<br/>
 				Alergias
 				<input type="text" name="txtAlergia"
 					<?php echo ($bCampoEditable==true?'':' disabled ');?>
-					value="<?php echo $oPersHosp->getTipo();?>"/>
+					value="<?php echo $$oPacHosp->getTipo();?>"/>
 				<br/>
 				<input type ="submit" value="<?php echo $sNomBoton;?>"
 				onClick="return evalua(txtNombre, txtApePat, rbSexo, txtFecNacim);"/>

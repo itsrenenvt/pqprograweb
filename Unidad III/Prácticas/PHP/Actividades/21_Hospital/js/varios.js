@@ -13,11 +13,11 @@ var bRet = false;
 
 	if (oFecha.disabled==false && oFecha.value=="")
 		sErr= sErr + "\n Falta fecha de nacimiento";
-	
+
 	if (sErr == "")
 		bRet = true;
 	else
 		alert(sErr);
-	
+
 	return bRet;
 }

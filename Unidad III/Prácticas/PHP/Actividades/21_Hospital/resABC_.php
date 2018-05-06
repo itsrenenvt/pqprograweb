@@ -8,7 +8,7 @@ include_once("modelo\PacientesHospital.php");
 session_start();
 
 $sErr=""; $sOpe = ""; $sCve = "";
-$oPersHosp = new PacientesHospital();
+$oPacHosp = new PacientesHospital();
 
 	/*Verificar que exista la sesión*/
 	if (isset($_SESSION["usu"]) && !empty($_SESSION["usu"])){
@@ -17,23 +17,23 @@ $oPersHosp = new PacientesHospital();
 			isset($_POST["txtOpe"]) && !empty($_POST["txtOpe"])){
 			$sOpe = $_POST["txtOpe"];
 			$sCve = $_POST["txtClave"];
-			$oPersHosp->setIdPersonal($sCve);
+			$oPacHosp->setIdPersonal($sCve);
 
 			if ($sOpe != "b"){
-				$oPersHosp->setNombre($_POST["txtNombre"]);
-				$oPersHosp->setApePat($_POST["txtApePat"]);
-				$oPersHosp->setApeMat($_POST["txtApeMat"]);
-				$oPersHosp->setFechaNacim(DateTime::createFromFormat('Y-m-d', $_POST["txtFecNacim"]));
-				$oPersHosp->setSexo($_POST["rbSexo"]);
-				$oPersHosp->setTipo($_POST["txtAlergia"]);
+				$oPacHosp->setNombre($_POST["txtNombre"]);
+				$oPacHosp->setApePat($_POST["txtApePat"]);
+				$oPacHosp->setApeMat($_POST["txtApeMat"]);
+				$oPacHosp->setFechaNacim(DateTime::createFromFormat('Y-m-d', $_POST["txtFecNacim"]));
+				$oPacHosp->setSexo($_POST["rbSexo"]);
+				$oPacHosp->setTipo($_POST["txtAlergia"]);
 			}
 			try{
 				if ($sOpe == 'a')
-					$nResultado = $oPersHosp->insertar();
+					$nResultado = $oPacHosp->insertar();
 				else if ($sOpe == 'b')
-					$nResultado = $oPersHosp->borrar();
+					$nResultado = $oPacHosp->borrar();
 				else
-					$nResultado = $oPersHosp->modificar();
+					$nResultado = $oPacHosp->modificar();
 
 				if ($nResultado != 1){
 					$sError = "Error en bd";
